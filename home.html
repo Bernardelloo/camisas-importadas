@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Camisas Importadas</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Camisas Importadas</div>
+    <ul class="menu">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="europeus.html">Europa</a></li>
+        <li><a href="brasileiros.html">Brasil</a></li>
+        <li><a href="selecoes.html">Seleções</a></li>
+    </ul>
+</nav>
+
+<!-- BANNER HOME -->
+<header class="banner">
+    <h1>Camisas Importadas</h1>
+    <p>Camisas tailandesas de alta qualidade</p>
+</header>
+
+<!-- BARRA DE PESQUISA -->
+<form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Digite o nome do time..." style="padding:10px; width:300px; border-radius:8px; margin:20px 0; font-size:16px;">
+</form>
+
+<h2 class="titulo">Categorias</h2>
+
+<!-- CATEGORIAS / LINKS -->
+<div class="categorias">
+
+    <a href="europeus.html" class="time">
+        <img src="img/banners/europa.png" alt="Europa">
+        <p>Europa</p>
+    </a>
+
+    <a href="brasileiros.html" class="time">
+        <img src="img/banners/brasil.png" alt="Brasil">
+        <p>Brasil</p>
+    </a>
+
+    <a href="selecoes.html" class="time">
+        <img src="img/banners/selecao.png" alt="Seleções">
+        <p>Seleções</p>
+    </a>
+
+    <a href="retro.html" class="time">
+        <img src="img/banners/retro.png" alt="Retrô">
+        <p>Retrô</p>
+    </a>
+
+</div>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5511957944391" target="_blank" class="whatsapp-float">
+<img src="img/icons/whatsapp.svg" alt="WhatsApp">
+</a>
+
+<!-- SCRIPT DE PESQUISA -->
+<script>
+const form = document.getElementById('searchForm');
+const input = document.getElementById('searchInput');
+const times = document.querySelectorAll('.time');
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const searchText = input.value.toLowerCase();
+
+    times.forEach(time => {
+        const nome = time.querySelector('p').innerText.toLowerCase();
+        if(nome.includes(searchText)){
+            time.style.display = 'block';
+        } else {
+            time.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
