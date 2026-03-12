@@ -435,4 +435,35 @@ color:#25D366;
 .produto:hover{
 transform:translateY(-6px);
 box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}.produtos{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+}
+
+.card-camisa{
+width:260px;
+background:#fff;
+border-radius:12px;
+padding:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.2s;
+}
+
+.card-camisa img{
+width:100%;
+height:260px;
+object-fit:contain;
+}
+
+.card-camisa:hover{
+transform:scale(1.05);
+}.produtos-grid{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
 }

@@ -120,7 +120,14 @@ h1{
 <div class="produto">
 
 <div class="imagem">
-<img src="img/selecoes/portugal/portugal_home_2026_1.png">
+<img id="imagem-principal" src="img/selecoes/portugal/portugal_home_2026_1.png">
+
+<div class="miniaturas">
+
+<img src="img/selecoes/portugal/portugal_home_2026_1.png" onclick="trocarImagem(this)">
+
+<img src="img/selecoes/portugal/portugal_home_2026_2.png" onclick="trocarImagem(this)">
+
 </div>
 
 <div class="info">
@@ -155,6 +162,10 @@ Comprar no WhatsApp
 </div>
 
 </div>
-
+<script>
+function trocarImagem(elemento){
+document.getElementById("imagem-principal").src = elemento.src;
+}
+</script>
 </body>
 </html>
