@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>São Paulo Home 2025</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">Camisas Importadas</div>
+
+<ul class="menu">
+<li><a href="home.html">Início</a></li>
+<li><a href="catalogo.html">Catálogo</a></li>
+<li><a href="europeus.html">Europa</a></li>
+<li><a href="brasileiros.html">Brasil</a></li>
+<li><a href="selecoes.html">Seleções</a></li>
+</ul>
+</nav>
+
+<div class="produto-container">
+
+<div class="galeria">
+
+<img id="imagem-principal" src="img/brasileiros/saopaulo/sp_home_2025_1.png">
+
+<div class="miniaturas">
+
+<img src="img/brasileiros/sao_paulo/sp_home_2025_1.png" onclick="trocarImagem(this)">
+
+<img src="img/brasileiros/sao_paulo/sp_home_2025_2.png" onclick="trocarImagem(this)">
+
+</div>
+
+</div>
+
+<div class="info-produto">
+
+<h1>Camisa São Paulo Home 2025</h1>
+
+<p class="preco">R$ 139,90</p>
+
+<p>
+Camisa versão torcedor com excelente qualidade, tecido respirável e ótimo acabamento.
+</p>
+
+<a href="https://wa.me/5511957944391" class="botao-comprar" target="_blank">
+Comprar no WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function trocarImagem(elemento){
+document.getElementById("imagem-principal").src = elemento.src;
+}
+
+</script>
+
+</body>
+
+</html>
