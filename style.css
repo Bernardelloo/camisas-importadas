@@ -468,26 +468,29 @@ max-width:1200px;
 margin:auto;
 }
 
-.card-camisa{
-background:#fff;
-border-radius:12px;
-padding:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.25s;
+.card-camisa p{
+
+margin-top:15px;
+font-weight:600;
+font-size:16px;
+
+background:#111;
+color:white;
+
+padding:10px 15px;
+border-radius:8px;
+
+display:inline-block;
+
+transition:0.2s;
+
 }
 
-.card-camisa img{
-width:100%;
-height:260px;
-object-fit:contain;
-transition:0.3s;
-}
+.card-camisa p:hover{
 
-.card-camisa:hover{
-transform:scale(1.05);
-}
+background:#c70101;
 
+}
 .card-camisa:hover img{
 transform:scale(1.08);
 }.produto-container{
@@ -496,6 +499,11 @@ gap:50px;
 padding:40px;
 max-width:1100px;
 margin:auto;
+}.card-camisa img{
+
+width:260px;
+border-radius:8px;
+
 }
 
 .galeria{
