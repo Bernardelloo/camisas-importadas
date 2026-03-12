@@ -1,20 +1,135 @@
-<div class="produto-pagina">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Portugal Home 2026</title>
 
-<img src="portugal_home_2026_1.png" class="foto-produto">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<div class="info-produto">
+<style>
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:0;
+}
+
+.produto{
+    max-width:1000px;
+    margin:60px auto;
+    display:flex;
+    gap:60px;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.produto img{
+    width:350px;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+h1{
+    font-size:32px;
+    margin:0;
+}
+
+.preco{
+    font-size:28px;
+    font-weight:700;
+    color:#111;
+}
+
+.descricao{
+    color:#666;
+}
+
+select{
+    padding:10px;
+    width:120px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.botao{
+    margin-top:20px;
+}
+
+.botao a{
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:500;
+    transition:0.2s;
+}
+
+.botao a:hover{
+    background:#1ebe5d;
+}
+
+.voltar{
+    margin:30px;
+}
+
+.voltar a{
+    text-decoration:none;
+    color:#333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="voltar">
+<a href="home.html">⬅ Voltar</a>
+</div>
+
+<div class="produto">
+
+<img src="img/selecoes/portugal/portugal_home_2026_1.png">
+
+<div class="info">
 
 <h1>Portugal Home 2026</h1>
 
-<p>Camisa versão torcedor importada.</p>
+<p class="descricao">
+Camisa versão torcedor importada.
+Alta qualidade, escudo bordado e tecido respirável.
+</p>
 
-<p class="preco">R$129</p>
+<div class="preco">
+R$129
+</div>
 
-<a class="botao-whatsapp"
-href="https://wa.me/5511999999999?text=Quero%20a%20camisa%20Portugal%20Home">
+<label>Tamanho:</label>
+
+<select>
+<option>P</option>
+<option>M</option>
+<option>G</option>
+<option>GG</option>
+</select>
+
+<div class="botao">
+<a href="https://wa.me/5511957944391?text=Olá!%20Tenho%20interesse%20na%20camisa%20Portugal%20Home%202026">
 Comprar no WhatsApp
 </a>
-
 </div>
 
 </div>
+
+</div>
+
+</body>
+</html>
