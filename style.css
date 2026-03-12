@@ -278,31 +278,43 @@ flex-wrap:wrap;
 gap:30px;
 margin-top:30px;
 }
-
-.time{
-text-align:center;
-display:flex;
-flex-direction:column;
-align-items:center;
-text-decoration:none;
-color:inherit;
-transition:transform 0.25s ease;
+.categorias{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+padding:40px;
 }
 
-.time img{
-width:140px;
-height:140px;
-object-fit:contain;
-transition:transform 0.25s ease;
+.time{
+background:white;
+border-radius:14px;
+padding:25px;
+text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:all 0.25s ease;
+cursor:pointer;
 }
 
 .time:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-.time:hover img{
-transform:scale(1.08);
+.time img{
+width:120px;
+height:120px;
+object-fit:contain;
+margin-bottom:10px;
 }
+
+.time p{
+font-weight:600;
+font-size:15px;
+color:#222;
+}
+
 
 /* TITULOS */
 
