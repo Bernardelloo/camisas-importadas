@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
-<title>São Paulo FC</title>
+<title>Costa Rica</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,57 +16,41 @@
 <div class="logo">RL Imports</div>
 
 <ul class="menu">
-<li><a href="home.html">Início</a></li>
-<li><a href="catalogo.html">Catálogo</a></li>
-<li><a href="europeus.html">Europa</a></li>
-<li><a href="brasileiros.html">Brasil</a></li>
-<li><a href="selecoes.html">Seleções</a></li>
+<li><a href="../../home.html">Início</a></li>
+<li><a href="../../europeus.html">Europa</a></li>
+<li><a href="../../brasileiros.html">Brasil</a></li>
+<li><a href="../../selecoes.html">Seleções</a></li>
 </ul>
 </nav>
 
-<h1 class="titulo">São Paulo FC</h1>
+<h1 class="titulo">Costa Rica</h1>
 
-<div class="produtos-grid" id="produtos"></div>
+<!-- ESCUDO -->
+<div style="text-align: center;">
+  <img src="../../img/selecoes/costarica.png" width="120">
+</div>
 
-<script>
+<div class="produtos-grid">
 
-const camisas = [
-
-{
-nome: "São Paulo Home 2025",
-imagem: "img/brasileiros/sao_paulo/sp_home_2025_1.png",
-link: "saopaulo-home-2025.html"
-},
-
-{
-nome: "São Paulo Away 2025",
-imagem: "img/brasileiros/sao_paulo/sp_away_2025_1.png",
-link: "saopaulo-away-2025.html"
-}
-
-];
-
-const container = document.getElementById("produtos");
-
-camisas.forEach(camisa => {
-
-container.innerHTML += `
-<a href="${camisa.link}">
+<a href="../../produtos/costarica.html">
 <div class="card-camisa">
-
-<img src="${camisa.imagem}">
-
-<p>${camisa.nome}</p>
-
+<img src="../../img/produtos/selecoes/costa_rica-home.png">
+<p>Costa Rica Home 2025</p>
 </div>
 </a>
-`;
 
-});
+<a href="../../produtos/costarica-away-2025.html">
+<div class="card-camisa">
+<img src="../../img/produtos/selecoes/costa_rica-away.png">
+<p>Costa Rica Away 2025</p>
+</div>
+</a>
 
-</script>
-<header class="banner-time">
+</div>
 
-</header>
+<a href="https://wa.me/SEUNUMERO" class="whatsapp-float">
+<img src="../../img/icones/whatsapp.png">
+</a>
+
 </body>
 </html>

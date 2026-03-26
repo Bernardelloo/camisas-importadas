@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
-<title>Portugal</title>
+<title>Canada</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -16,55 +16,41 @@
 <div class="logo">RL Imports</div>
 
 <ul class="menu">
-<li><a href="home.html">Início</a></li>
-<li><a href="catalogo.html">Catálogo</a></li>
-<li><a href="europeus.html">Europa</a></li>
-<li><a href="brasileiros.html">Brasil</a></li>
-<li><a href="selecoes.html">Seleções</a></li>
+<li><a href="../../home.html">Início</a></li>
+<li><a href="../../europeus.html">Europa</a></li>
+<li><a href="../../brasileiros.html">Brasil</a></li>
+<li><a href="../../selecoes.html">Seleções</a></li>
 </ul>
 </nav>
 
-<h1 class="titulo">Portugal</h1>
+<h1 class="titulo">Canada</h1>
 
-<div class="produtos-grid" id="produtos"></div>
+<!-- ESCUDO -->
+<div style="text-align: center;">
+  <img src="../../img/selecoes/canada.png" width="120">
+</div>
 
-<script>
+<div class="produtos-grid">
 
-const camisas = [
-
-{
-nome: "Portugal Home 2026",
-imagem: "img/selecoes/portugal/portugal_home_2026_1.png",
-link: "portugal-home-2026.html"
-},
-
-{
-nome: "Portugal Away 2026",
-imagem: "img/selecoes/portugal/portugal_home_2026_2.png",
-link: "portugal-away-2026.html"
-}
-
-];
-
-const container = document.getElementById("produtos");
-
-camisas.forEach(camisa => {
-
-container.innerHTML += `
-<a href="${camisa.link}">
+<a href="../../produtos/canada.html">
 <div class="card-camisa">
-
-<img src="${camisa.imagem}">
-
-<p>${camisa.nome}</p>
-
+<img src="../../img/produtos/selecoes/canada-home.png">
+<p>Canada Home 2025</p>
 </div>
 </a>
-`;
 
-});
+<a href="../../produtos/canada-away-2025.html">
+<div class="card-camisa">
+<img src="../../img/produtos/selecoes/canada-away.png">
+<p>Canada Away 2025</p>
+</div>
+</a>
 
-</script>
+</div>
+
+<a href="https://wa.me/SEUNUMERO" class="whatsapp-float">
+<img src="../../img/icones/whatsapp.png">
+</a>
 
 </body>
 </html>
