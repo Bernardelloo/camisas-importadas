@@ -11,6 +11,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 <div class="logo">RL Imports</div>
 
@@ -22,50 +23,67 @@
 </ul>
 </nav>
 
+<!-- CONTEÚDO -->
+<main>
+
 <div class="produto-container">
 
-<!-- GALERIA -->
-<div class="galeria">
-<img id="imagem-principal" src="../img/brasileiros/corinthians/corinthians-home-2025.png">
+    <!-- GALERIA -->
+    <div class="galeria">
 
-<div class="miniaturas">
-<img src="../img/brasileiros/corinthians/corinthians-home-2025.png" onclick="trocarImagem(this)">
-<img src="../img/brasileiros/corinthians/corinthians-home-2025-2.png" onclick="trocarImagem(this)">
-</div>
-</div>
+    <img class="logo-time-bg" src="../img/brasileiros/corinthians/corinthians.png">
 
-<!-- INFORMAÇÕES -->
-<div class="info-produto">
+    <div class="imagem-box">
+        <img id="imagem-principal" src="../img/brasileiros/corinthians/corinthians-home-2025.png">
+    </div>
 
-<h1>Corinthians Home 2025</h1>
-
-<p class="preco">R$ 149,90</p>
-
-<p class="descricao">
-A camisa oficial do Corinthians 2025 combina design moderno com conforto e qualidade. 
-Perfeita para torcedores que querem representar o time com estilo dentro e fora do estádio.
-</p>
-
-<a href="https://wa.me/5511957944391?text=Quero%20consultar%20a%20disponibilidade%20da%20camisa%20Corinthians%202025"
-class="botao-comprar">
-Consultar disponibilidade
-</a>
-
-<div class="beneficios">
-<p>✔ Produto premium</p>
-<p>✔ Qualidade garantida</p>
-</div>
-
-<h3>Detalhes do produto</h3>
-
-<ul class="detalhes">
-<li>✔ Modelo: Versão jogador</li>
-<li>✔ Tecido leve e respirável</li>
-<li>✔ Escudo bordado de alta qualidade</li>
-<li>✔ Excelente caimento no corpo</li>
-</ul>
+    <div class="miniaturas">
+        <img src="../img/brasileiros/corinthians/corinthians-home-2025.png" onclick="trocarImagem(this)">
+        <img src="../img/brasileiros/corinthians/corinthians-home-2025-2.png" onclick="trocarImagem(this)">
+    </div>
 
 </div>
+
+    <!-- INFORMAÇÕES -->
+    <div class="info-produto">
+
+        <h1>Corinthians Home 2025</h1>
+
+        <p class="preco">R$ 149,90</p>
+        <div class="avaliacoes">
+★★★★★ <span>(124 avaliações)</span>
+</div>
+
+        <p class="descricao">
+        Camisa premium, confortável e com ótimo acabamento.
+        </p>
+
+        <a href="https://wa.me/5511957944391?text=Quero%20consultar%20a%20disponibilidade%20da%20camisa%20Corinthians%202025"
+        class="botao-comprar">
+        Consultar disponibilidade
+        </a>
+
+        <div class="beneficios">
+            <p>✔ Produto premium</p>
+            <p>✔ Qualidade garantida</p>
+        </div>
+
+        <h3>Detalhes do produto</h3>
+
+        <ul class="detalhes">
+            <li>✔ Modelo: Versão jogador</li>
+            <li>✔ Tecido leve e respirável</li>
+            <li>✔ Escudo bordado de alta qualidade</li>
+            <li>✔ Excelente caimento no corpo</li>
+        </ul>
+
+    </div>
+
+</div>
+
+</main>
+
+<!-- RODAPÉ -->
 <footer class="rodape">
 
 <div class="rodape-container">
@@ -100,10 +118,10 @@ Consultar disponibilidade
 <div class="rodape-bottom">
 <p>© 2026 RL Imports - Todos os direitos reservados</p>
 </div>
-
+<div class="logo-time"></div>
 </footer>
-</div>
 
+<!-- SCRIPT -->
 <script>
 function trocarImagem(elemento){
 document.getElementById("imagem-principal").src = elemento.src;
