@@ -7,11 +7,9 @@
 
 /* BODY */
 body {
-    margin: 0;
-    padding-top: 80px;
     font-family: 'Poppins', sans-serif;
     background: #f5f5f5;
-    overflow-x: hidden;
+    padding-top: 80px;
 }
 
 /* NAVBAR */
@@ -48,22 +46,152 @@ body {
 .menu a:hover {
     color: #25D366;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* BANNER */
+.banner {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url("img/banners/home.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 40px;
+}
+
+.banner p {
+    margin-top: 10px;
+}
+
+/* TITULO */
+.titulo {
+    text-align: center;
+    font-size: 38px; /* 🔥 grande */
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* GRID TIMES */
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 🔥 maior */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.time {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 240px; /* 🔥 maior */
+    
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+
+/* HOVER PREMIUM */
+.time:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.time img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+
+     background: transparent;
+}
+.time p {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+    text-align: center;
+}
 /* PRODUTO */
 .produto-container {
     display: flex;
-    justify-content: center; /* CENTRALIZA */
-    align-items: center;
+    justify-content: center;
     gap: 80px;
     max-width: 1200px;
     margin: 100px auto;
 }
-/* GALERIA */
 
+/* GALERIA */
+.galeria {
+    text-align: center;
+    position: relative;
+}
+
+.logo-time-bg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    opacity: 0.08;
+}
+
+.imagem-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+#imagem-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.imagem-box:hover #imagem-principal {
+    transform: scale(1.1);
+}
+.galeria {
+    text-align: center;
+}
+/* MINIATURAS */
 .miniaturas {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .miniaturas img {
@@ -82,72 +210,99 @@ body {
 
 /* INFO */
 .info-produto {
-    max-width: 500px;
-}
-
-.info-produto h1 {
-    font-size: 26px;
+    max-width: 400px;
 }
 
 .preco {
     font-size: 28px;
     color: #2ecc71;
     font-weight: bold;
+}
+
+.avaliacoes {
+    color: #f1c40f;
     margin: 10px 0;
 }
-
-.descricao {
-    color: #555;
-    margin-bottom: 20px;
+/* GRID DE PRODUTOS */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
 }
 
-/* BOTÃO */
+/* LINK LIMPO */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CARD */
+.card-camisa {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* HOVER */
+.card-camisa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* IMAGEM (AQUI TAVA O ERRO) */
+.card-camisa img {
+    width: 100%;
+    height: 220px; /* 🔥 trava tamanho */
+    object-fit: contain; /* 🔥 não estoura */
+}
+
+/* TEXTO */
+.card-camisa p {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #111;
+}
 .botao-comprar {
     display: block;
-    background: #25D366;
+    background: linear-gradient(45deg, #25D366, #1ebe5d);
     color: white;
     padding: 15px;
     text-align: center;
     border-radius: 8px;
+    margin: 15px 0;
     font-weight: bold;
-    text-decoration: none;
-    margin: 20px 0;
-    transition: 0.3s;
 }
 
-.botao-comprar:hover {
-    background: #1ebe5d;
-    transform: scale(1.05);
-}
-
-/* LISTA */
-.detalhes {
-    margin-top: 10px;
-    padding-left: 18px;
-    color: #444;
+.urgencia {
+    color: red;
+    font-weight: bold;
 }
 
 /* RODAPÉ */
 .rodape {
-    width: 100%;
     background: #0a0a0a;
     color: white;
+    padding: 40px 20px;
     margin-top: 80px;
-    padding: 50px 0;
 }
 
 .rodape-container {
-    max-width: 1100px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    padding: 0 20px;
+    max-width: 1100px;
+    margin: auto;
     flex-wrap: wrap;
 }
 
 .coluna {
-    flex: 1;
     min-width: 200px;
 }
 
@@ -155,22 +310,15 @@ body {
     display: block;
     color: #ccc;
     margin: 5px 0;
-    text-decoration: none;
-}
-
-.rodape a:hover {
-    color: #25D366;
 }
 
 .rodape-bottom {
-    border-top: 1px solid #222;
-    margin-top: 40px;
-    padding: 20px;
     text-align: center;
+    margin-top: 20px;
     color: #777;
 }
 
-/* WHATSAPP */
+/*WHATSAPP*/
 .whatsapp-float {
     position: fixed;
     bottom: 25px;
@@ -185,109 +333,22 @@ body {
 }
 
 .whatsapp-float img {
-    width: 35px;
-}
-/* GALERIA */
-.galeria {
-    text-align: center;
-    position: relative;
-}
-
-/* LOGO */
-.logo-time-bg {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 120px;
-    opacity: 0.08;
-    pointer-events: none;
-}
-
-/* IMAGEM PRINCIPAL */
-#imagem-principal {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-.imagem-box {
-    width: 500px;
-    height: 500px; /* 🔥 FIXO */
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-
-    overflow: hidden; /* garante que nada vaze */
-}.imagem-box:hover #imagem-principal {
-    transform: scale(1.12);
-}.avaliacoes {
-    color: #f1c40f;
-    font-size: 18px;
-    margin: 5px 0 15px;
-}
-
-.avaliacoes span {
-    color: #777;
-    font-size: 14px;
-}.logo-time {
-    position: fixed;                 /* Fica sempre visível */
-    top: 50px;                       /* Distância do topo */
-    left: 20px;                      /* Distância da esquerda */
-    width: 200px;                     /* Tamanho padrão */
-    height: 200px;
-    background-image: url('img/brasileiros/corinthians.png');
-    background-size: contain;        /* Mantém proporção */
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 2;                      /* Fica acima do fundo, mas atrás do conteúdo */
-    pointer-events: none;            /* Não atrapalha cliques em botões/links */
-}
-
-/* Responsivo: telas menores */
-@media (max-width: 768px) {
-    .logo-time {
-        width: 120px;                /* Reduz tamanho no tablet/celular */
-        height: 120px;
-        top: 30px;
-        left: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-time {
-        width: 80px;                 /* Menor ainda no celular */
-        height: 80px;
-        top: 20px;
-        left: 10px;
-    }
+    width: 30px;   /* 🔥 trava o tamanho */
+    height: 30px;
 }
 /* RESPONSIVO */
 @media (max-width: 768px) {
-
-    .info-produto {
-        max-width: 100%;
+    .produto-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .navbar {
-        padding: 15px 20px;
+    .imagem-box {
+        width: 90%;
+        height: 350px;
     }
 
     .menu {
-        gap: 15px;
         font-size: 12px;
     }
-
-    .rodape-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-}
-
-.imagem-box:hover #imagem-principal {
-    transform: scale(1.08);
 }
